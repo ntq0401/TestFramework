@@ -1,0 +1,32 @@
+<div class="card mt-5">
+    <h1 class="card-header">{{title}}</h1>
+    <div class="card-body">
+      <form>
+        <label for="" class="form-label">Họ và tên:</label>
+            <input type="text" class="form-control" ng-model="info.name" disabled>
+
+            <label for="" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" ng-model="info.sdt" disabled>
+
+            <label for="" class="form-label">Email</label>
+            <input type="text" class="form-control" ng-model="info.email" disabled>
+
+            <label for="" class="form-label">Điểm xuất phát</label>
+            <input type="text" class="form-control" ng-model="info.diemxuatphat" disabled>
+
+            <label for="" class="form-label">Điểm đến</label>
+            <input type="text" class="form-control" ng-model="info.diemden" disabled>
+
+            <label for="" class="form-label">Giờ bay</label>
+            <input type="text" class="form-control" ng-model="info.giobay" disabled>
+
+            <label for="" class="form-label">Ngày bay</label>
+            <input type="text" class="form-control" ng-model="info.ngaybay" disabled>
+            <div class="text-center mt-3">
+                <a href="#!/danh-sach"><button class="btn btn-success">Quay lại</button></a>
+                <a href="#!/edit/{{info.editID}}"><button class="btn btn-secondary">Chỉnh sửa</button></a>
+              </div>
+      </form>
+      
+    </div>
+</div>

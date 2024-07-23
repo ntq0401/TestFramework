@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="./libs/angular.min.js"></script>
+        <script src="./libs/angular-route.js"></script>
+        <title>Document</title>
+    </head>
+    <style>
+        .container-fluid{
+    position: relative;
+        }
+    .header{
+    position: relative;
+    
+}
+    </style>
+    <body ng-app="appRoute">
+        <header>
+            <div class="header" style="background-color: #f8f9fa">
+                <div class="row">
+                    <div class="col-sm-2 p-0" style="background-color: #f8f9fa">
+                        <img src="./img/logo.webp" alt
+                            style="margin: 5px 50px" />
+                    </div>
+                    <div class="col-sm-7 p-0">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse"
+                                    id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link active"
+                                            aria-current="page"
+                                            href="#!/trang-chu" >Trang
+                                            chủ</a>
+                                            <a class="nav-link"
+                                        href="#!/danh-sach">Danh sách</a>
+                                        <a class="nav-link"
+                                        href="#!/gioi-thieu">Giới
+                                            thiệu</a>
+                                        <a class="nav-link"
+                                            href="#!/dat-ve">Đặt
+                                            vé</a>
+                                        <a class="nav-link"
+                                            href="#!/tour">Tour
+                                            du
+                                            lịch</a>
+                                        <a class="nav-link"
+                                                href="#!/lien-he">Liên
+                                            hệ</a>
+                                            <a class="nav-link"
+                                                href="#!/asm">ASM
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3 p-0 m-0">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2"
+                                        type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <button class="btn btn-primary"
+                                        type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main ng-view>
+
+        </main>
+        <footer>
+            <div class="end-content text-center" style="
+      height: 200px;
+      background-color: #0396ff;
+      color: white;
+      padding: 20px 0;
+    border-radius: 10px;">
+                <h1>Theo dõi và cập nhật tin tức mới nhất</h1>
+                <center>
+                    <p style="width: 800px">
+                        Vinh hạnh của chúng tôi là mang đến cho bạn những chuyến
+                        đi đáng
+                        nhớ. Mang đến cho bạn những chuyến đi đầy cảm hứng. Khám
+                        phá những
+                        vùng đất mới. Tự do khám phá cùng chúng tôi.
+                    </p>
+
+                    <form style="display: flex; width: 400px">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Nhập email" aria-label="Search" />
+                        <button class="btn btn-primary" type="submit"
+                            style="height: 40px; width: 150px">
+                            Theo dõi
+                        </button>
+                    </form>
+                </center>
+            </div>
+        </footer>
+        <footer class="footer" style="padding-top: 30px;">
+            <div class="mid-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-12">
+                            <h4 class="title-menu">
+                                Thông tin liên hệ
+                            </h4>
+                            <div class="contact-footer">
+                                <div class="list-group" style="padding: 5px 0px;">
+                                    <strong>Địa chỉ</strong>
+                                    
+                                    Tòa nhà Ladeco, 266 Đội Cấn, Ba Đình, Hà Nội
+                                    
+                                </div>
+                                <div class="list-group" style="padding: 5px 0px;">
+                                    <strong>Email</strong>
+                                    <a>support@sapo.vn</a>
+                                </div>
+                                <div class="list-group" style="padding: 5px 0px;">
+                                    <strong>Hotline</strong>
+                                    <a>1900 6750</a>
+                                </div>
+                                <div class="list-group" style="padding: 5px 0px;">
+                                    <strong>Thời gian hỗ trợ</strong>
+                                    08:30 - 21:30 các ngày trong tuần
+                                </div>
+                            </div>
+        
+        
+                        </div>
+                        <div class="col-xl-8 col-lg-9 col-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <h4>
+                                        Hướng dẫn
+                                    </h4>
+                                    <div class="list-group">
+                                        
+                                        <a style="padding: 5px 0px;">Trang chủ</a>
+                                        
+                                        <a style="padding: 5px 0px;">Giới thiệu</a>
+                                        
+                                        <a style="padding: 5px 0px;">Tour du lịch</a>
+                                        
+                                        <a style="padding: 5px 0px;">Tin tức</a>
+                                        
+                                        <a style="padding: 5px 0px;">Faqs</a>
+                                        
+                                        <a style="padding: 5px 0px;">Liên hệ</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <h4 >
+                                        Thông tin cần biết
+                                    </h4>
+                                    <div class="list-group">
+                                        
+                                        <a style="padding: 5px 0px;">Về chúng tôi</a>
+                                        
+                                        <a style="padding: 5px 0px;">Câu hỏi thường gặp</a>
+                                        
+                                        <a style="padding: 5px 0px;">Điều kiện, điều khoản</a>
+                                        
+                                        <a style="padding: 5px 0px;">Quy chế hoạt động</a>
+                                        
+                                        <a style="padding: 5px 0px;">Liên hệ</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div >
+                                        <h4>
+                                            Tải ứng dụng ND Travel
+                                        </h4>
+                                        <div style="padding: 5px 0px;">
+                                            <img style="padding: 0px 5px;" src="//bizweb.dktcdn.net/100/505/645/themes/938995/assets/img-app-store.png?1705937164715" alt="ND Travel">
+                                            <img style="padding: 0px 5px;" src="//bizweb.dktcdn.net/100/505/645/themes/938995/assets/img-google-play.png?1705937164715" alt="ND Travel">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+        <script src="controller/DanhSachController.js"></script>
+        <script src="controller/ChiTietChuyenBayController.js"></script>
+        <script src="controller/ThemChuyenBayController.js"></script>
+        <script src="controller/SuaChuyenBayController.js"></script>
+        <script>
+        let myApp = angular.module('appRoute', ['ngRoute']);
+        myApp.config(function ($routeProvider){
+            $routeProvider
+            .when(
+                '/danh-sach',
+                {
+                    templateUrl: 'views/danhsach.html',
+                    controller: DanhSachController
+                }
+            )
+            .when(
+                '/chi-tiet/:id',
+                {
+                    templateUrl: 'views/detail.html',
+                    controller: ChiTietChuyenBayController
+                }
+            )
+            .when(
+                '/edit/:id',
+                {
+                    templateUrl: 'views/edit.html',
+                    controller: SuaChuyenBayController
+                }
+            )
+            .when(
+                '/add',
+                {
+                    templateUrl: 'views/add.html',
+                    controller: ThemChuyenBayController
+                }
+            )
+            .when(
+                '/trang-chu',
+                {
+                    templateUrl: 'views/trangchu.html',
+                }
+            )
+            .when(
+                '/gioi-thieu',
+                {
+                    templateUrl: 'views/gioithieu.html',
+                }
+            )
+            .when(
+                '/dat-ve',
+                {
+                    templateUrl: 'views/datve.html',
+                }
+            )
+            .when(
+                '/lien-he',
+                {
+                    templateUrl: 'views/lienhe.html',
+                }
+            )
+            .when(
+                '/tour',
+                {
+                    templateUrl: 'views/tour.html',
+                }
+            )
+            .when(
+                '/asm',
+                {
+                    templateUrl: 'views/asm.html',
+                }
+            )
+            .otherwise(
+              {
+                redirectTo: '/trang-chu'
+              }
+            )  
+        });
+        </script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

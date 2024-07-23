@@ -1,0 +1,39 @@
+<div class="card mt-5">
+    <h1>{{title}}</h1>
+    <div>
+        <a href="#!/add">
+            <button class="btn btn-success">Thêm mới</button>
+        </a>
+        <table class="table">
+            <thead>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Số điện thoại</th>
+                <th>Email</th>
+                <th>Điểm xuất phát</th>
+                <th>Điểm đến</th>
+                <th>Giờ bay</th>
+                <th>Ngày bay</th>
+                <th>Thao tác</th>
+            </thead>
+            <tr ng-repeat="item in danhsach">
+                <td>{{ $index + 1 }}</td>
+                <td>{{item.ten}}</td>
+                <td>{{item.sdt}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.diemxuatphat}}</td>
+                <td>{{item.diemden}}</td>
+                <td>{{item.giobay}}</td>
+                <td>{{item.ngaybay}}</td>
+                <td> 
+                    <a href="#!/chi-tiet/{{item.id}}" style="text-decoration: none;">
+                        <button class="btn btn-primary">Chi tiết</button>
+                    </a>
+                    <a href="#!/edit/{{item.id}}" style="text-decoration: none;"><button class="btn btn-secondary">Chỉnh sửa</button> </a>             
+                    <button ng-click="deleteInfo(item.id)" class="btn btn-danger" >Xóa</button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

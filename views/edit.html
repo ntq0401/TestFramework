@@ -1,0 +1,48 @@
+<div class="card mt-5">
+    <h1 class="card-header">{{title}}</h1>
+    <div class="card-body">
+      <form ng-submit="editInfo()">
+        <label for="" class="form-label">Họ và tên:</label>
+            <input type="text" class="form-control" ng-model="info.name">
+            <div ng-if="kiemTra.name" class="text-danger">
+              Vui lòng nhập họ tên !
+            </div>
+            <label for="" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" ng-model="info.sdt">
+            <div ng-if="kiemTra.sdt" class="text-danger">
+              Vui lòng nhập sđt!
+            </div>
+            <label for="" class="form-label">Email</label>
+            <input type="text" class="form-control" ng-model="info.email">
+            <div ng-if="kiemTra.email" class="text-danger">
+              Vui lòng nhập email !
+            </div>
+            <label for="" class="form-label">Điểm xuất phát</label>
+            <input type="text" class="form-control" ng-model="info.diemxuatphat">
+            <div ng-if="kiemTra.diemxuatphat" class="text-danger">
+              Vui lòng nhập điểm xuất phát !
+            </div>
+            <label for="" class="form-label">Điểm đến</label>
+            <input type="text" class="form-control" ng-model="info.diemden">
+            <div ng-if="kiemTra.diemden" class="text-danger">
+              Vui lòng nhập điểm đến !
+            </div>
+            <label for="" class="form-label">Giờ bay</label>
+            <input type="text" class="form-control" ng-model="info.giobay">
+            <div ng-if="kiemTra.giobay" class="text-danger">
+              Vui lòng nhập giờ bay !
+            </div>
+            
+            <label for="" class="form-label">Ngày bay</label>
+            <input type="text" class="form-control" ng-model="info.ngaybay">
+            <div ng-if="kiemTra.ngaybay" class="text-danger">
+              Vui lòng nhập ngày bay !
+            </div>
+            <div class="text-center mt-3">
+                <a href="#!/danh-sach"><button class="btn btn-secondary">Quay lại</button></a>
+                <button class="btn btn-primary" type="submit">Chỉnh sửa</button>
+              </div>
+      </form>
+      
+    </div>
+</div>
